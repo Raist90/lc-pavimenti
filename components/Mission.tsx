@@ -1,7 +1,7 @@
 export { Mission }
 
-import missionBG from '@/assets/4.png'
-import { useId } from 'react'
+// import missionBG from '@/assets/4.png'
+import React, { useId } from 'react'
 import { Media } from './Media'
 
 type MissionProps = {
@@ -33,7 +33,8 @@ function Mission({ title, texts }: MissionProps) {
 
       <Media
         className='absolute left-0 top-0 -z-[1] h-full w-full opacity-10'
-        image={{ alt: '', src: missionBG }}
+        // image={{ alt: '', src: missionBG }}
+        image={{ alt: '', src: 'https://picsum.photos/2000?random=50' }}
       />
     </section>
   )
