@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react'
-import { useId, type ComponentProps } from 'react'
+import React, { useId, type ComponentProps } from 'react'
 import { Link } from './Link'
 import { Title } from './Title'
 
@@ -50,7 +50,7 @@ function Contacts({ infos, socials, title, text }: ContactsProps) {
         <Title {...titleProps} />
 
         <div className='mt-4'>
-          <ul className='grid gap-2'>
+          <ul className='grid gap-2 text-sm lg:text-base'>
             {infos.map((info) => (
               <li className='flex items-center gap-2' key={info.type}>
                 <span className='w-fit'>{infoList[info.type]}</span>
@@ -79,7 +79,7 @@ function Contacts({ infos, socials, title, text }: ContactsProps) {
           <ul className='flex gap-2'>
             {socials.map((social) => (
               <li key={social.type}>
-                <a href={social.href} target='_blank'>
+                <a href={social.href} target='_blank' rel='noreferrer'>
                   {socialList[social.type]}
                 </a>
               </li>
@@ -90,7 +90,7 @@ function Contacts({ infos, socials, title, text }: ContactsProps) {
 
       <div>
         <iframe
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4836394681015!2d17.70011871218685!3d40.66331147128181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134667a638c5f739%3A0x52ea4c29f7176685!2sViale%20Francia%2C%2072019%20San%20Vito%20dei%20Normanni%20BR%2C%20Italia!5e0!3m2!1sit!2sse!4v1718971686085!5m2!1sit!2sse'
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4836394681015!2d17.70011871218685!3d40.66331147128181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134667066ca6f1df%3A0x5f472465fdb5c890!2sVia%20Annibale%20de%20Leo%2C%2015%2C%2072019%20San%20Vito%20dei%20Normanni%20BR!5e0!3m2!1sit!2sit!4v1721160015017!5m2!1sit!2sit'
           width='100%'
           height='450'
           loading='lazy'

@@ -31,7 +31,7 @@ function TextMedia({ image, texts }: TextMediaProps) {
             <div className='pl-8 md:pl-0'>
               <h2
                 id={titleID}
-                className='title-2 border-b border-solid border-red-500 pb-1'
+                className='title-2 border-b border-solid border-blue-500 pb-1'
               >
                 {text.title}
               </h2>

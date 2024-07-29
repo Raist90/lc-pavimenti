@@ -19,7 +19,7 @@ function Services({ services }: Services) {
   const titleProps = {
     id: titleID,
     title: 'I nostri servizi',
-    text: 'Scopri i nostri servizi e la nostra ampia gamma di soluzioni per privati e aziende.',
+    text: 'Offriamo una vasta gamma di servizi per rispondere a tutte le vostre esigenze di pavimentazione e rivestimento:',
   }
 
   return (
@@ -30,11 +30,11 @@ function Services({ services }: Services) {
     >
       <Title {...titleProps} />
 
-      <div className='mt-16 grid gap-8 md:grid-cols-2'>
+      <div className='mt-16 grid gap-8 md:grid-cols-3'>
         {services.map((service) => (
           <div
             key={service.title}
-            className='rounded-sm border border-gray-400 bg-red-50 p-4 duration-300 ease-in-out hover:-translate-y-4 dark:border-red-500 dark:bg-red-700'
+            className='rounded-sm border border-gray-400 bg-blue-50 p-4 duration-300 ease-in-out hover:-translate-y-4 dark:border-blue-500 dark:bg-blue-700'
           >
             <h3 className='mb-2 font-bold uppercase'>{service.title}</h3>
             {service.text.map((paragraph, idx) => (

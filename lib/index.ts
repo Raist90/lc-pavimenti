@@ -1,25 +1,48 @@
 export { globalProps, homepageProps }
 
-import slide5 from '@/assets/12.jpg'
-import slide6 from '@/assets/13.jpg'
-import slide11 from '@/assets/14.jpg'
-import slide20 from '@/assets/15.jpg'
-import slide12 from '@/assets/19.jpg'
-import slide13 from '@/assets/2.jpg'
-import slide14 from '@/assets/21.jpg'
-import slide15 from '@/assets/26.jpg'
-import slide16 from '@/assets/3.jpg'
-import slide19 from '@/assets/35.png'
-import slide17 from '@/assets/39.jpg'
-import { default as slide1, default as textMedia1 } from '@/assets/4.png'
-import slide18 from '@/assets/42.jpg'
-import slide4 from '@/assets/43.png'
-import slide7 from '@/assets/64.png'
-import slide9 from '@/assets/68.jpg'
-import slide10 from '@/assets/72.jpg'
-import slide2 from '@/assets/83.jpg'
-import slide3 from '@/assets/84.jpg'
-import slide8 from '@/assets/86.jpg'
+// import slide5 from '@/assets/12.jpg'
+// import slide6 from '@/assets/13.jpg'
+// import slide11 from '@/assets/14.jpg'
+// import slide20 from '@/assets/15.jpg'
+// import slide12 from '@/assets/19.jpg'
+// import slide13 from '@/assets/2.jpg'
+// import slide14 from '@/assets/21.jpg'
+// import slide15 from '@/assets/26.jpg'
+// import slide16 from '@/assets/3.jpg'
+// import slide19 from '@/assets/35.png'
+// import slide17 from '@/assets/39.jpg'
+// import { default as slide1, default as textMedia1 } from '@/assets/4.png'
+// import slide18 from '@/assets/42.jpg'
+// import slide4 from '@/assets/43.png'
+// import slide7 from '@/assets/64.png'
+// import slide9 from '@/assets/68.jpg'
+// import slide10 from '@/assets/72.jpg'
+// import slide2 from '@/assets/83.jpg'
+// import slide3 from '@/assets/84.jpg'
+// import slide8 from '@/assets/86.jpg'
+
+const slide5 = 'https://picsum.photos/2000?random=1'
+const slide6 = 'https://picsum.photos/2000?random=2'
+const slide11 = 'https://picsum.photos/2000?random=3'
+const slide20 = 'https://picsum.photos/2000?random=4'
+const slide12 = 'https://picsum.photos/2000?random=5'
+const slide13 = 'https://picsum.photos/2000?random=6'
+const slide14 = 'https://picsum.photos/2000?random=7'
+const slide15 = 'https://picsum.photos/2000?random=8'
+const slide16 = 'https://picsum.photos/2000?random=9'
+const slide19 = 'https://picsum.photos/2000?random=10'
+const slide17 = 'https://picsum.photos/2000?random=11'
+const slide1 = 'https://picsum.photos/2000?random=12'
+const textMedia1 = 'https://picsum.photos/2000?random=13'
+const slide18 = 'https://picsum.photos/2000?random=14'
+const slide4 = 'https://picsum.photos/2000?random=15'
+const slide7 = 'https://picsum.photos/2000?random=16'
+const slide9 = 'https://picsum.photos/2000?random=17'
+const slide10 = 'https://picsum.photos/2000?random=18'
+const slide2 = 'https://picsum.photos/2000?random=19'
+const slide3 = 'https://picsum.photos/2000?random=20'
+const slide8 = 'https://picsum.photos/2000?random=21'
+
 import { Contacts } from '@/components/Contacts'
 import { Gallery } from '@/components/Gallery'
 import type { Hero } from '@/components/Hero'
@@ -27,7 +50,6 @@ import { Mission } from '@/components/Mission'
 import { Rental } from '@/components/Rental'
 import { Services } from '@/components/Services'
 import { TextMedia } from '@/components/TextMedia'
-import { PICSUM_API } from '@/constants'
 import type { Navigation } from '@/types'
 import type { ComponentProps } from 'react'
 
@@ -51,7 +73,7 @@ const navigationProps: Navigation = {
     },
   ],
   footer: {
-    text: 'CONVERTINO S.R.L., VIA SPECCHIOLLA ZONA IND.LE – 72019 SAN VITO DEI NORMANNI (BR) – P.IVA/C.F. 01898970742',
+    text: 'LC PAVIMENTI, VIA ANNIBALE DE LEO 15 – 72019 SAN VITO DEI NORMANNI (BR) – P.IVA/C.F. ???',
   },
 }
 
@@ -60,37 +82,73 @@ const slideProps: ComponentProps<typeof Hero>[] = [
     cta: {
       href: '/#contattaci',
       label: 'Contattaci',
-      text: 'Specialisti nel noleggio di piattaforme aeree e nella realizzazione di lavori e ristrutturazioni',
+      text: 'Specialisti in lavorazioni e posa di grandi lastre in gres porcellanato',
     },
     image: {
       alt: 'Banner',
       src: slide1,
     },
-    title: 'Benvenuti su Convertino SRL',
+    title: 'LC Pavimenti',
   },
   {
     cta: {
       href: '/#chi-siamo',
       label: 'Chi siamo',
-      text: 'Da oltre 40 anni, Convertino SRL offre servizi di alta qualità nel settore delle piattaforme aeree e delle ristrutturazioni',
+      text: 'Attrezzatura professionale per posa di lastre di qualsiasi dimensioni',
     },
     image: {
       alt: 'Banner',
       src: slide9,
     },
-    title: 'Alta qualità',
+    title: 'Attrezzatura professionale',
   },
   {
     cta: {
       href: '/#servizi',
       label: 'Servizi',
-      text: 'Siamo specializzati in una vasta gamma di servizi di ristrutturazione e manutenzione',
+      text: 'Realizzazione di top cucine e lavandini fatti in opera in gres porcellanato.',
     },
     image: {
       alt: 'Banner',
       src: slide13,
     },
-    title: 'Specialisti della ristrutturazione',
+    title: 'Top cucine e lavandini',
+  },
+  {
+    cta: {
+      href: '/#contattaci',
+      label: 'Contattaci',
+      text: 'Ristrutturazioni chiavi in mano.',
+    },
+    image: {
+      alt: 'Banner',
+      src: slide13,
+    },
+    title: 'Ristrutturazioni',
+  },
+  {
+    cta: {
+      href: '/#chi-siamo',
+      label: 'Chi siamo',
+      text: 'Fornitura di materiali.',
+    },
+    image: {
+      alt: 'Banner',
+      src: slide13,
+    },
+    title: 'Materiali',
+  },
+  {
+    cta: {
+      href: '/#servizi',
+      label: 'Servizi',
+      text: 'Lavori realizzati con il proprio organico lavorativo.',
+    },
+    image: {
+      alt: 'Banner',
+      src: slide13,
+    },
+    title: 'Lavori in proprio',
   },
 ]
 
@@ -98,27 +156,73 @@ const servicesProps: ComponentProps<typeof Services> = {
   services: [
     {
       list: [
-        'Piattaforme autocarrate',
-        'Piattaforme semoventi',
-        'Piattaforme verticali',
-        'Ragni e piattaforme cingolate',
+        'Soluzioni moderne e di design per ogni tipo di ambiente.',
+        'Installazione precisa e duratura.',
       ],
-      title: 'Noleggio piattaforme aeree',
-      text: [
-        'Offriamo una vasta gamma di piattaforme aeree per qualsiasi tipo di lavoro in quota. Le nostre attrezzature sono moderne, sicure e regolarmente manutenute. Tra le nostre proposte:',
-      ],
+      title: 'Pavimenti in Grandi Lastre',
+      text: [''],
     },
     {
       list: [
-        'Ristrutturazioni interne ed esterne',
-        'Rifacimento facciate',
-        'Manutenzione edifici',
-        'Realizzazione di nuove costruzioni',
+        'Ideali per pareti, bagni, e cucine.',
+        'Superfici uniformi e facili da pulire.',
       ],
-      title: 'Lavori e ristrutturazioni',
-      text: [
-        'Il nostro team di esperti è specializzato in una vasta gamma di servizi di ristrutturazione e manutenzione. Dal piccolo intervento alla ristrutturazione completa, ci occupiamo di:',
+      title: 'Rivestimenti in Grandi Lastre',
+      text: [''],
+    },
+    {
+      title: 'Pavimenti Tradizionali',
+      text: [''],
+      list: [
+        'Parquet, gres porcellanato, e molto altro.',
+        'Lavorazioni artigianali e materiali di alta qualità.',
       ],
+    },
+    {
+      title: 'Rivestimenti Tradizionali',
+      text: [''],
+      list: [
+        'Soluzioni classiche e personalizzabili.',
+        'Ampia scelta di materiali e finiture.',
+      ],
+    },
+    {
+      title: 'Consulenza e Progettazione',
+      text: [''],
+      list: [
+        'Assistenza nella scelta dei materiali e delle soluzioni migliori.',
+        'Progetti su misura per ogni esigenza.',
+      ],
+    },
+    {
+      title: 'Ristrutturazioni chiavi in mano',
+      text: [''],
+      list: [
+        'Ristrutturiamo la tua casa dalla A alla Z',
+        'Progetti su misura per ogni esigenza',
+      ],
+    },
+    {
+      title:
+        'Realizzazione di top cucine e lavandini fatti in opera in gres porcellanato',
+      text: [''],
+      list: [
+        'Progettiamo la tua cucina da realizzare in gres porcellanato o in marmo',
+        'Realizziamo zona top e rivestimenti',
+      ],
+    },
+    {
+      title: 'Fornitura di materiali',
+      text: [''],
+      list: [
+        "Passa nel nostro store per visionare l'amplia scelta di materiali",
+        'Ordiniamo e forniamo i materiali in tutta Italia',
+      ],
+    },
+    {
+      title: 'Lavori in loco per ogni tua esigenza',
+      text: [''],
+      list: ["Hai bisogno di un'altra tipologia di lavori? Contattaci"],
     },
   ],
 }
@@ -132,8 +236,8 @@ const textMediaProps: ComponentProps<typeof TextMedia> = {
     {
       title: 'La nostra storia',
       paragraphs: [
-        'Da oltre 40 anni, Convertino SRL offre servizi di alta qualità nel settore delle piattaforme aeree e delle ristrutturazioni.',
-        'La nostra esperienza e professionalità ci rendono un punto di riferimento nel mercato. Siamo orgogliosi di fornire soluzioni su misura per ogni tipo di progetto, garantendo sicurezza, efficienza e risultati eccellenti.',
+        'In LC Pavimenti e Rivestimenti, la nostra missione è fornire pavimenti e rivestimenti di eccellenza.',
+        'Con un team di esperti e artigiani qualificati, ci impegniamo a soddisfare le esigenze dei nostri clienti con precisione e professionalità. La nostra passione per l’innovazione ci ha portato a specializzarci nell’uso di grandi lastre, un’opzione che offre numerosi vantaggi estetici e funzionali.',
       ],
     },
   ],
@@ -142,8 +246,8 @@ const textMediaProps: ComponentProps<typeof TextMedia> = {
 const missionProps: ComponentProps<typeof Mission> = {
   title: 'La nostra Mission',
   texts: [
-    "La nostra mission è quella di facilitare il lavoro dei nostri clienti offrendo attrezzature all'avanguardia e servizi di ristrutturazione eseguiti da personale qualificato.",
-    'Puntiamo a diventare il vostro partner di fiducia, assicurando sempre la massima soddisfazione.',
+    "La nostra azienda è specializzata nell'applicazione di pavimenti e rivestimenti di alta qualità. Con anni di esperienza nel settore, siamo orgogliosi di offrire soluzioni innovative e durature per i vostri spazi.",
+    'Il nostro punto di forza? Le grandi lastre. Scoprite come possiamo trasformare il vostro ambiente con eleganza e funzionalità.',
   ],
 }
 
@@ -165,12 +269,15 @@ const rentalProps: ComponentProps<typeof Rental> = {
     },
   ],
   benefits: {
-    title: 'Vantaggi del noleggio',
+    title: 'Grandi Lastre',
+    text: [
+      'Le grandi lastre rappresentano il futuro del design per pavimenti e rivestimenti. Grazie alle loro dimensioni e alle elevate prestazioni tecniche, sono la scelta ideale per chi desidera un ambiente moderno e raffinato. Ecco i vantaggi:',
+    ],
     list: [
-      'Attrezzature all’avanguardia',
-      'Consegna e ritiro a domicilio',
-      'Assistenza tecnica dedicata',
-      'Flessibilità nei tempi di noleggio',
+      'Estetica Continua: superfici ampie e senza giunture visibili.',
+      'Facilità di Pulizia: meno fughe significa meno accumulo di sporco.',
+      'Durabilità: resistenza a urti, graffi e macchie.',
+      'Versatilità: adatte a pavimenti, pareti, piani di lavoro e molto altro.',
     ],
   },
 }
@@ -259,36 +366,36 @@ const galleryProps: ComponentProps<typeof Gallery> = {
     },
   ],
   title: 'I nostri lavori',
-  text: 'Dai un’occhiata ad alcuni dei nostri progetti più recenti e scopri come abbiamo aiutato i nostri clienti a realizzare i loro obiettivi. La qualità del nostro lavoro parla per noi.',
+  text: 'Sfogliate la nostra galleria per vedere alcune delle nostre realizzazioni. Ogni progetto è unico e riflette l’attenzione al dettaglio e la qualità che mettiamo in ogni installazione. Dai un’occhiata alle nostre soluzioni con grandi lastre e scopri come possiamo trasformare il tuo spazio.',
 }
 
 const contactsProps: ComponentProps<typeof Contacts> = {
   infos: [
     {
       type: 'phone',
-      text: '+39 355 624 2449',
+      text: '+30 338 630 3534',
     },
     {
       type: 'email',
-      text: 'info@convertinoedilizia.it',
+      text: 'infolcpavimentierivestimenti@gmail.com',
     },
     {
       type: 'address',
-      text: 'Viale Francia 72019 San Vito dei Normanni, Puglia',
+      text: 'Via Annibale de Leo 15, 72019 San Vito dei Normanni (BR)',
     },
   ],
   socials: [
-    {
-      type: 'fb',
-      href: 'https://www.facebook.com/profile.php?id=100067893503970',
-    },
+    // {
+    //   type: 'fb',
+    //   href: 'https://www.facebook.com/profile.php?id=100067893503970',
+    // },
     {
       type: 'ig',
-      href: 'https://www.instagram.com/convertinosrl/',
+      href: 'https://www.instagram.com/lc_pavimenti_e_rivestimenti_/?hl=it',
     },
   ],
   title: 'Contattaci',
-  text: 'Hai bisogno di un preventivo o vuoi maggiori informazioni sui nostri servizi? Non esitare a contattarci. Siamo a tua disposizione per rispondere a tutte le tue domande.',
+  text: 'Siamo qui per aiutarti a realizzare i tuoi progetti. Per qualsiasi domanda o per richiedere un preventivo, non esitare a contattarci. Il nostro team di esperti è a tua disposizione per offrirti consulenze personalizzate e guidarti nella scelta delle migliori soluzioni per i tuoi pavimenti e rivestimenti.',
 }
 
 type HomepageProps = {
