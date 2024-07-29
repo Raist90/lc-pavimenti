@@ -10,7 +10,7 @@ export default function HeadDefault() {
   return (
     <>
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <meta name='description' content='Convertino edilizia' />
+      <meta name='description' content='LC Pavimenti' />
 
       <link rel='preconnect' href='https://fonts.googleapis.com' />
       <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />

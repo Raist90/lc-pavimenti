@@ -8,6 +8,6 @@ export default {
   Layout,
   Head,
   // <title>
-  title: 'Convertino Edilizia',
+  title: 'LC Pavimenti',
   extends: vikeReact,
 } satisfies Config
