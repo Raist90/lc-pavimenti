@@ -1,6 +1,5 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react'
 import React, { useId, type ComponentProps } from 'react'
-import { Link } from './Link'
 import { Title } from './Title'
 
 export { Contacts }
@@ -31,13 +30,13 @@ function Contacts({ infos, socials, title, text }: ContactsProps) {
     textDirection: 'left',
   }
   const infoList = {
-    phone: <Phone size={18} fill='red' />,
-    email: <Mail size={18} fill='red' />,
-    address: <MapPin size={18} fill='red' />,
+    phone: <Phone size={18} fill='dodgerblue' />,
+    email: <Mail size={18} fill='dodgerblue' />,
+    address: <MapPin size={18} fill='dodgerblue' />,
   }
   const socialList = {
-    fb: <Facebook fill='red' />,
-    ig: <Instagram fill='red' />,
+    fb: <Facebook fill='dodgerblue' />,
+    ig: <Instagram fill='dodgerblue' />,
   }
 
   return (
@@ -54,15 +53,8 @@ function Contacts({ infos, socials, title, text }: ContactsProps) {
             {infos.map((info) => (
               <li className='flex items-center gap-2' key={info.type}>
                 <span className='w-fit'>{infoList[info.type]}</span>
-                {info.type !== 'address' ? (
-                  <a
-                    className='hover:underline'
-                    href={
-                      info.type === 'phone'
-                        ? `tel:${info.text}`
-                        : `mailto:${info.text}`
-                    }
-                  >
+                {info.type === 'email' ? (
+                  <a className='hover:underline' href={`mailto:${info.text}`}>
                     {info.text}
                   </a>
                 ) : (

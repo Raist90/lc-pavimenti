@@ -34,7 +34,7 @@ function Services({ services }: Services) {
         {services.map((service) => (
           <div
             key={service.title}
-            className='rounded-sm border border-gray-400 bg-blue-50 p-4 duration-300 ease-in-out hover:-translate-y-4 dark:border-blue-500 dark:bg-blue-700'
+            className='rounded-sm border border-gray-400 bg-blue-50 p-4 duration-300 ease-in-out hover:-translate-y-4 dark:border-blue-500 dark:bg-blue-900'
           >
             <h3 className='mb-2 font-bold uppercase'>{service.title}</h3>
             {service.text.map((paragraph, idx) => (

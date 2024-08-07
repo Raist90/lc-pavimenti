@@ -1,47 +1,29 @@
 export { globalProps, homepageProps }
 
-// import slide5 from '@/assets/12.jpg'
-// import slide6 from '@/assets/13.jpg'
-// import slide11 from '@/assets/14.jpg'
-// import slide20 from '@/assets/15.jpg'
-// import slide12 from '@/assets/19.jpg'
-// import slide13 from '@/assets/2.jpg'
-// import slide14 from '@/assets/21.jpg'
-// import slide15 from '@/assets/26.jpg'
-// import slide16 from '@/assets/3.jpg'
-// import slide19 from '@/assets/35.png'
-// import slide17 from '@/assets/39.jpg'
-// import { default as slide1, default as textMedia1 } from '@/assets/4.png'
-// import slide18 from '@/assets/42.jpg'
-// import slide4 from '@/assets/43.png'
-// import slide7 from '@/assets/64.png'
-// import slide9 from '@/assets/68.jpg'
-// import slide10 from '@/assets/72.jpg'
-// import slide2 from '@/assets/83.jpg'
-// import slide3 from '@/assets/84.jpg'
-// import slide8 from '@/assets/86.jpg'
+import slide1 from '@/assets/1 SLIDEcp.jpeg'
+import slide2 from '@/assets/2 slidecp.jpg'
+import slide3 from '@/assets/3 SLIDEcp.jpeg'
+import slide4 from '@/assets/4 SLIDEcp.jpeg'
+import slide5 from '@/assets/5 SLIDEcp.jpeg'
+import slide6 from '@/assets/6 SLIDEcp.jpg'
 
-const slide5 = 'https://picsum.photos/2000?random=1'
-const slide6 = 'https://picsum.photos/2000?random=2'
-const slide11 = 'https://picsum.photos/2000?random=3'
-const slide20 = 'https://picsum.photos/2000?random=4'
-const slide12 = 'https://picsum.photos/2000?random=5'
-const slide13 = 'https://picsum.photos/2000?random=6'
-const slide14 = 'https://picsum.photos/2000?random=7'
-const slide15 = 'https://picsum.photos/2000?random=8'
-const slide16 = 'https://picsum.photos/2000?random=9'
-const slide19 = 'https://picsum.photos/2000?random=10'
-const slide17 = 'https://picsum.photos/2000?random=11'
-const slide1 = 'https://picsum.photos/2000?random=12'
-const textMedia1 = 'https://picsum.photos/2000?random=13'
-const slide18 = 'https://picsum.photos/2000?random=14'
-const slide4 = 'https://picsum.photos/2000?random=15'
-const slide7 = 'https://picsum.photos/2000?random=16'
-const slide9 = 'https://picsum.photos/2000?random=17'
-const slide10 = 'https://picsum.photos/2000?random=18'
-const slide2 = 'https://picsum.photos/2000?random=19'
-const slide3 = 'https://picsum.photos/2000?random=20'
-const slide8 = 'https://picsum.photos/2000?random=21'
+import gallery1 from '@/assets/1 GALLERYcp.png'
+import gallery9 from '@/assets/10 gallrycp.jpg'
+import gallery10 from '@/assets/12 gallrycp.jpg'
+import gallery11 from '@/assets/13 gallrtycp.jpg'
+import gallery12 from '@/assets/14 gallrycp.jpg'
+import gallery13 from '@/assets/15 gallrycp.jpg'
+import gallery14 from '@/assets/16 gallrycp.jpg'
+import gallery15 from '@/assets/17 gallrycp.jpg'
+import gallery16 from '@/assets/18 gallrycp.jpg'
+import gallery2 from '@/assets/2 slidecp.jpg'
+import gallery3 from '@/assets/3 SLIDEcp.jpeg'
+import gallery4 from '@/assets/4 SLIDEcp.jpeg'
+import gallery5 from '@/assets/5 SLIDEcp.jpeg'
+import gallery6 from '@/assets/6 GALLERYcp.png'
+import gallery7 from '@/assets/8 gallerycp.jpg'
+import gallery8 from '@/assets/9 gallrycp.jpg'
+import textMedia1 from '@/assets/sezione storiacp.jpg'
 
 import { Contacts } from '@/components/Contacts'
 import { Gallery } from '@/components/Gallery'
@@ -64,8 +46,8 @@ const navigationProps: Navigation = {
       href: '/#chi-siamo',
     },
     {
-      label: 'Noleggio',
-      href: '/#noleggio',
+      label: 'Grandi Lastre',
+      href: '/#grandi-lastre',
     },
     {
       label: 'Contattaci',
@@ -73,7 +55,7 @@ const navigationProps: Navigation = {
     },
   ],
   footer: {
-    text: 'LC PAVIMENTI, VIA ANNIBALE DE LEO 15 – 72019 SAN VITO DEI NORMANNI (BR) – P.IVA/C.F. ???',
+    text: 'LC PAVIMENTI, VIA ANNIBALE DE LEO 15 – 72019 SAN VITO DEI NORMANNI (BR) – P.IVA/C.F. 02724800749',
   },
 }
 
@@ -88,7 +70,7 @@ const slideProps: ComponentProps<typeof Hero>[] = [
       alt: 'Banner',
       src: slide1,
     },
-    title: 'LC Pavimenti',
+    title: 'LC Pavimenti e Rivestimenti',
   },
   {
     cta: {
@@ -98,7 +80,7 @@ const slideProps: ComponentProps<typeof Hero>[] = [
     },
     image: {
       alt: 'Banner',
-      src: slide9,
+      src: slide2,
     },
     title: 'Attrezzatura professionale',
   },
@@ -110,7 +92,7 @@ const slideProps: ComponentProps<typeof Hero>[] = [
     },
     image: {
       alt: 'Banner',
-      src: slide13,
+      src: slide3,
     },
     title: 'Top cucine e lavandini',
   },
@@ -122,7 +104,7 @@ const slideProps: ComponentProps<typeof Hero>[] = [
     },
     image: {
       alt: 'Banner',
-      src: slide13,
+      src: slide4,
     },
     title: 'Ristrutturazioni',
   },
@@ -134,7 +116,7 @@ const slideProps: ComponentProps<typeof Hero>[] = [
     },
     image: {
       alt: 'Banner',
-      src: slide13,
+      src: slide5,
     },
     title: 'Materiali',
   },
@@ -146,7 +128,7 @@ const slideProps: ComponentProps<typeof Hero>[] = [
     },
     image: {
       alt: 'Banner',
-      src: slide13,
+      src: slide6,
     },
     title: 'Lavori in proprio',
   },
@@ -286,83 +268,67 @@ const galleryProps: ComponentProps<typeof Gallery> = {
   images: [
     {
       alt: '',
-      src: slide1,
+      src: gallery1,
     },
     {
       alt: '',
-      src: slide2,
+      src: gallery2,
     },
     {
       alt: '',
-      src: slide3,
+      src: gallery3,
     },
     {
       alt: '',
-      src: slide4,
+      src: gallery4,
     },
     {
       alt: '',
-      src: slide5,
+      src: gallery5,
     },
     {
       alt: '',
-      src: slide6,
+      src: gallery6,
     },
     {
       alt: '',
-      src: slide7,
+      src: gallery7,
     },
     {
       alt: '',
-      src: slide8,
+      src: gallery8,
     },
     {
       alt: '',
-      src: slide9,
+      src: gallery9,
     },
     {
       alt: '',
-      src: slide10,
+      src: gallery10,
     },
     {
       alt: '',
-      src: slide11,
+      src: gallery11,
     },
     {
       alt: '',
-      src: slide12,
+      src: gallery12,
     },
     {
       alt: '',
-      src: slide13,
+      src: gallery13,
     },
     {
       alt: '',
-      src: slide14,
+      src: gallery14,
     },
     {
       alt: '',
-      src: slide15,
+      src: gallery15,
     },
     {
       alt: '',
-      src: slide16,
-    },
-    {
-      alt: '',
-      src: slide17,
-    },
-    {
-      alt: '',
-      src: slide18,
-    },
-    {
-      alt: '',
-      src: slide19,
-    },
-    {
-      alt: '',
-      src: slide20,
+      src: gallery16,
     },
   ],
   title: 'I nostri lavori',
@@ -373,7 +339,7 @@ const contactsProps: ComponentProps<typeof Contacts> = {
   infos: [
     {
       type: 'phone',
-      text: '+30 338 630 3534',
+      text: '+30 338 630 3534 | 338 822 3289',
     },
     {
       type: 'email',

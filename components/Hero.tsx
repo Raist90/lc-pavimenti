@@ -2,7 +2,7 @@ export { Hero }
 
 import type { Image, Link as LinkType } from '@/types'
 import clsx from 'clsx'
-import { useId } from 'react'
+import React, { useId } from 'react'
 import { Link } from './Link'
 import { Media } from './Media'
 
@@ -32,7 +32,7 @@ function Hero({ cta, image, title, ...rest }: HeroProps) {
         image={image}
       />
 
-      <div className='absolute top-[50%] z-[1] w-full translate-y-[-50%] text-balance text-center'>
+      <div className='absolute top-[50%] z-[1] w-full translate-y-[-50%] text-balance px-2 text-center'>
         <h2
           id={titleID}
           className={clsx(

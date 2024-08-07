@@ -15,14 +15,14 @@ function CarouselArrowButtons({
   return (
     <div className='mt-4 flex gap-2'>
       <button
-        className='border border-black p-3 dark:border-blue-900 dark:bg-blue-500'
+        className='border border-black p-3 dark:border-blue-500 dark:bg-blue-900'
         onClick={scrollPrev}
       >
         <ArrowLeft aria-hidden='true' />
       </button>
 
       <button
-        className='border border-black p-3 dark:border-blue-900 dark:bg-blue-500'
+        className='border border-black p-3 dark:border-blue-500 dark:bg-blue-900'
         onClick={scrollNext}
       >
         <ArrowRight aria-hidden='true' />
