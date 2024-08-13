@@ -2,6 +2,7 @@ export { Services }
 
 import { isArray } from '@/helpers/predicates'
 import React, { useId } from 'react'
+import { usePageContext } from 'vike-react/usePageContext'
 import { Title } from './Title'
 
 type Services = {
@@ -16,11 +17,23 @@ type Services = {
 function Services({ services }: Services) {
   const titleID = useId()
 
+  const { urlPathname } = usePageContext()
+
   const titleProps = {
     id: titleID,
     title: 'I nostri servizi',
     text: 'Offriamo una vasta gamma di servizi per rispondere a tutte le vostre esigenze di pavimentazione e rivestimento:',
   }
+
+  const engTitleProps = {
+    id: titleID,
+    title: 'Our services',
+    text: 'We offer a wide range of services to meet all your flooring and cladding needs:',
+  }
+
+  const translatedProps = urlPathname.startsWith('/en')
+    ? engTitleProps
+    : titleProps
 
   return (
     <section
@@ -28,7 +41,7 @@ function Services({ services }: Services) {
       aria-labelledby={titleID}
       className='my-20 p-4 lg:mx-auto lg:w-10/12'
     >
-      <Title {...titleProps} />
+      <Title {...translatedProps} />
 
       <div className='mt-16 grid gap-8 md:grid-cols-3'>
         {services.map((service) => (

@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react'
 import React, { useId, type ComponentProps } from 'react'
+import { usePageContext } from 'vike-react/usePageContext'
 import { Title } from './Title'
 
 export { Contacts }
@@ -39,6 +40,8 @@ function Contacts({ infos, socials, title, text }: ContactsProps) {
     ig: <Instagram fill='dodgerblue' />,
   }
 
+  const { urlPathname } = usePageContext()
+
   return (
     <section
       id='contattaci'
@@ -66,7 +69,9 @@ function Contacts({ infos, socials, title, text }: ContactsProps) {
         </div>
 
         <div className='mt-4'>
-          <h3 className='mb-2 font-bold uppercase'>Seguici su:</h3>
+          <h3 className='mb-2 font-bold uppercase'>
+            {urlPathname.startsWith('/en') ? 'Follow us:' : 'Seguici su:'}
+          </h3>
 
           <ul className='flex gap-2'>
             {socials.map((social) => (

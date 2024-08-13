@@ -5,9 +5,11 @@ import logoDark from '@/assets/LUCA LOGO.png'
 import { assert } from '@/helpers/assert'
 import { useTheme } from '@/helpers/useTheme'
 import { globalProps } from '@/lib'
+import { globalProps as engProps } from '@/lib/translations'
 import clsx from 'clsx'
 import { SquareMenu, X } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
+import { usePageContext } from 'vike-react/usePageContext'
 import { Drawer } from './Drawer'
 import { Media } from './Media'
 import { Navigation } from './Navigation'
@@ -43,6 +45,9 @@ function Header() {
 
   const logo = theme === 'dark' ? logoWhite : logoDark
 
+  const { urlPathname } = usePageContext()
+  const translatedProps = urlPathname.startsWith('/en') ? engProps : globalProps
+
   if (!mounted) return
 
   /** @todo Refactor with LogoWrapper */
@@ -69,7 +74,7 @@ function Header() {
         <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
       </header>
       <Drawer isOpen={isOpen}>
-        <Navigation {...globalProps.navigationProps} />
+        <Navigation {...translatedProps.navigationProps} />
       </Drawer>
 
       <header
@@ -80,7 +85,7 @@ function Header() {
           <Media className='w-[50px]' image={{ alt: 'Logo', src: logo }} />
         </h1>
 
-        <Navigation {...globalProps.navigationProps} />
+        <Navigation {...translatedProps.navigationProps} />
 
         <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
       </header>
